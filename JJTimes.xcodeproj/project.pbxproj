@@ -14,6 +14,8 @@
 		D516C0BD2A4EDCD2006CD3D6 /* JJTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0BC2A4EDCD2006CD3D6 /* JJTimesTests.swift */; };
 		D516C0C72A4EDCD2006CD3D6 /* JJTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0C62A4EDCD2006CD3D6 /* JJTimesUITests.swift */; };
 		D516C0C92A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0C82A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift */; };
+		D516C0D62A4EE47A006CD3D6 /* JJTopStoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */; };
+		D516C0D82A4EE49A006CD3D6 /* JJTopStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D516C0C22A4EDCD2006CD3D6 /* JJTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D516C0C62A4EDCD2006CD3D6 /* JJTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTimesUITests.swift; sourceTree = "<group>"; };
 		D516C0C82A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesVC.swift; sourceTree = "<group>"; };
+		D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				D516C0A52A4EDCD1006CD3D6 /* AppDelegate.swift */,
 				D516C0A72A4EDCD1006CD3D6 /* SceneDelegate.swift */,
+				D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */,
+				D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */,
 				D516C0AE2A4EDCD2006CD3D6 /* Assets.xcassets */,
 				D516C0B02A4EDCD2006CD3D6 /* LaunchScreen.storyboard */,
 				D516C0B32A4EDCD2006CD3D6 /* Info.plist */,
@@ -251,8 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D516C0D82A4EE49A006CD3D6 /* JJTopStoriesView.swift in Sources */,
 				D516C0A62A4EDCD1006CD3D6 /* AppDelegate.swift in Sources */,
 				D516C0A82A4EDCD1006CD3D6 /* SceneDelegate.swift in Sources */,
+				D516C0D62A4EE47A006CD3D6 /* JJTopStoriesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
