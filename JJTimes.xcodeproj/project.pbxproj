@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98B0C1EF3FDC44A727F2661F /* Pods_JJTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006A15B9AE0C15BD9A06D8F /* Pods_JJTimes.framework */; };
+		9C798EEFE99DB93486D429B9 /* Pods_JJTimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756D5A403FC33ABE449A2723 /* Pods_JJTimesTests.framework */; };
 		D516C0A62A4EDCD1006CD3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0A52A4EDCD1006CD3D6 /* AppDelegate.swift */; };
 		D516C0A82A4EDCD1006CD3D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0A72A4EDCD1006CD3D6 /* SceneDelegate.swift */; };
 		D516C0AF2A4EDCD2006CD3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D516C0AE2A4EDCD2006CD3D6 /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 		D516C0C92A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0C82A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift */; };
 		D516C0D62A4EE47A006CD3D6 /* JJTopStoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */; };
 		D516C0D82A4EE49A006CD3D6 /* JJTopStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */; };
+		F40B740A3CC748A249C3E56D /* Pods_JJTimes_JJTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC995F8CF1ADADB73043847 /* Pods_JJTimes_JJTimesUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FA6192BEB182156F7CABE25 /* Pods-JJTimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimesTests.release.xcconfig"; path = "Target Support Files/Pods-JJTimesTests/Pods-JJTimesTests.release.xcconfig"; sourceTree = "<group>"; };
+		756D5A403FC33ABE449A2723 /* Pods_JJTimesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJTimesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8006A15B9AE0C15BD9A06D8F /* Pods_JJTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83EA0B82D5600A15D43C71FB /* Pods-JJTimes-JJTimesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimes-JJTimesUITests.release.xcconfig"; path = "Target Support Files/Pods-JJTimes-JJTimesUITests/Pods-JJTimes-JJTimesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86F99D6E7A1A9BD5570811B4 /* Pods-JJTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimes.debug.xcconfig"; path = "Target Support Files/Pods-JJTimes/Pods-JJTimes.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC995F8CF1ADADB73043847 /* Pods_JJTimes_JJTimesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJTimes_JJTimesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02A96910EAB6C059B655D5E /* Pods-JJTimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimes.release.xcconfig"; path = "Target Support Files/Pods-JJTimes/Pods-JJTimes.release.xcconfig"; sourceTree = "<group>"; };
+		C47B37C0A31F2E9E8FD16A69 /* Pods-JJTimes-JJTimesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimes-JJTimesUITests.debug.xcconfig"; path = "Target Support Files/Pods-JJTimes-JJTimesUITests/Pods-JJTimes-JJTimesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D516C0A22A4EDCD1006CD3D6 /* JJTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D516C0A52A4EDCD1006CD3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D516C0A72A4EDCD1006CD3D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		D516C0C82A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesVC.swift; sourceTree = "<group>"; };
 		D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesView.swift; sourceTree = "<group>"; };
+		ED245B6B61BC64CABCC74479 /* Pods-JJTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimesTests.debug.xcconfig"; path = "Target Support Files/Pods-JJTimesTests/Pods-JJTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B0C1EF3FDC44A727F2661F /* Pods_JJTimes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C798EEFE99DB93486D429B9 /* Pods_JJTimesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40B740A3CC748A249C3E56D /* Pods_JJTimes_JJTimesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE20B67F24C2716B196B1A5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F99D6E7A1A9BD5570811B4 /* Pods-JJTimes.debug.xcconfig */,
+				C02A96910EAB6C059B655D5E /* Pods-JJTimes.release.xcconfig */,
+				C47B37C0A31F2E9E8FD16A69 /* Pods-JJTimes-JJTimesUITests.debug.xcconfig */,
+				83EA0B82D5600A15D43C71FB /* Pods-JJTimes-JJTimesUITests.release.xcconfig */,
+				ED245B6B61BC64CABCC74479 /* Pods-JJTimesTests.debug.xcconfig */,
+				6FA6192BEB182156F7CABE25 /* Pods-JJTimesTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D26DD2D0211737F4AB7E3A7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8006A15B9AE0C15BD9A06D8F /* Pods_JJTimes.framework */,
+				BFC995F8CF1ADADB73043847 /* Pods_JJTimes_JJTimesUITests.framework */,
+				756D5A403FC33ABE449A2723 /* Pods_JJTimesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D516C0992A4EDCD1006CD3D6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				D516C0BB2A4EDCD2006CD3D6 /* JJTimesTests */,
 				D516C0C52A4EDCD2006CD3D6 /* JJTimesUITests */,
 				D516C0A32A4EDCD1006CD3D6 /* Products */,
+				CE20B67F24C2716B196B1A5B /* Pods */,
+				D26DD2D0211737F4AB7E3A7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D516C0CC2A4EDCD2006CD3D6 /* Build configuration list for PBXNativeTarget "JJTimes" */;
 			buildPhases = (
+				ABDB2FBCEE2008680512057E /* [CP] Check Pods Manifest.lock */,
 				D516C09E2A4EDCD1006CD3D6 /* Sources */,
 				D516C09F2A4EDCD1006CD3D6 /* Frameworks */,
 				D516C0A02A4EDCD1006CD3D6 /* Resources */,
+				0DEF4C6BD7C95A9C27CA2041 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D516C0CF2A4EDCD2006CD3D6 /* Build configuration list for PBXNativeTarget "JJTimesTests" */;
 			buildPhases = (
+				E237517CC3865375F7240555 /* [CP] Check Pods Manifest.lock */,
 				D516C0B42A4EDCD2006CD3D6 /* Sources */,
 				D516C0B52A4EDCD2006CD3D6 /* Frameworks */,
 				D516C0B62A4EDCD2006CD3D6 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D516C0D22A4EDCD2006CD3D6 /* Build configuration list for PBXNativeTarget "JJTimesUITests" */;
 			buildPhases = (
+				BA8C8F179B777F951A27F4AD /* [CP] Check Pods Manifest.lock */,
 				D516C0BE2A4EDCD2006CD3D6 /* Sources */,
 				D516C0BF2A4EDCD2006CD3D6 /* Frameworks */,
 				D516C0C02A4EDCD2006CD3D6 /* Resources */,
+				3DD3A7CE9E1A7090F3DBA7D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DEF4C6BD7C95A9C27CA2041 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJTimes/Pods-JJTimes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJTimes/Pods-JJTimes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JJTimes/Pods-JJTimes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DD3A7CE9E1A7090F3DBA7D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJTimes-JJTimesUITests/Pods-JJTimes-JJTimesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JJTimes-JJTimesUITests/Pods-JJTimes-JJTimesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JJTimes-JJTimesUITests/Pods-JJTimes-JJTimesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABDB2FBCEE2008680512057E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJTimes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8C8F179B777F951A27F4AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJTimes-JJTimesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E237517CC3865375F7240555 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJTimesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D516C09E2A4EDCD1006CD3D6 /* Sources */ = {
@@ -424,6 +573,7 @@
 		};
 		D516C0CD2A4EDCD2006CD3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F99D6E7A1A9BD5570811B4 /* Pods-JJTimes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -434,7 +584,6 @@
 				INFOPLIST_FILE = JJTimes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -453,6 +602,7 @@
 		};
 		D516C0CE2A4EDCD2006CD3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02A96910EAB6C059B655D5E /* Pods-JJTimes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,7 +613,6 @@
 				INFOPLIST_FILE = JJTimes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -482,6 +631,7 @@
 		};
 		D516C0D02A4EDCD2006CD3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED245B6B61BC64CABCC74479 /* Pods-JJTimesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +652,7 @@
 		};
 		D516C0D12A4EDCD2006CD3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA6192BEB182156F7CABE25 /* Pods-JJTimesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +673,7 @@
 		};
 		D516C0D32A4EDCD2006CD3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47B37C0A31F2E9E8FD16A69 /* Pods-JJTimes-JJTimesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +692,7 @@
 		};
 		D516C0D42A4EDCD2006CD3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83EA0B82D5600A15D43C71FB /* Pods-JJTimes-JJTimesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

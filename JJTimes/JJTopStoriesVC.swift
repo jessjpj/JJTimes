@@ -6,15 +6,22 @@
 //
 
 import UIKit
+import PureLayout
 
 class JJTopStoriesVC: UIViewController {
 
+    var topStoriesView: JJTopStoriesView?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addTopStoriesView()
     }
-    
+
+    fileprivate func addTopStoriesView() {
+        topStoriesView = JJTopStoriesView(frame: CGRect.zero)
+        guard let topStoriesView = topStoriesView else { return }
+        self.view.addSubview(topStoriesView)
+        topStoriesView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
+    }
 
     /*
     // MARK: - Navigation
