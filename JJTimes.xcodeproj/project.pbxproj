@@ -18,6 +18,19 @@
 		D516C0C92A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0C82A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift */; };
 		D516C0D62A4EE47A006CD3D6 /* JJTopStoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */; };
 		D516C0D82A4EE49A006CD3D6 /* JJTopStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */; };
+		D516C0DA2A5170BC006CD3D6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0D92A5170BC006CD3D6 /* UIView+Extension.swift */; };
+		D516C0DC2A5172C8006CD3D6 /* JJTopStoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0DB2A5172C8006CD3D6 /* JJTopStoriesTVC.swift */; };
+		D516C0DE2A530713006CD3D6 /* JJTopStoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0DD2A530713006CD3D6 /* JJTopStoriesModel.swift */; };
+		D516C0E02A5308C8006CD3D6 /* JJTopStoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0DF2A5308C8006CD3D6 /* JJTopStoriesViewModel.swift */; };
+		D516C0E22A5309B9006CD3D6 /* JJRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0E12A5309B9006CD3D6 /* JJRepository.swift */; };
+		D516C0E42A530A48006CD3D6 /* JJTopStoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0E32A530A48006CD3D6 /* JJTopStoriesRepository.swift */; };
+		D516C0E62A530A8E006CD3D6 /* JJNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0E52A530A8E006CD3D6 /* JJNetworkClient.swift */; };
+		D516C0E82A530AE0006CD3D6 /* JJCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0E72A530AE0006CD3D6 /* JJCache.swift */; };
+		D516C0EA2A530B1C006CD3D6 /* JJURLWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0E92A530B1C006CD3D6 /* JJURLWrapper.swift */; };
+		D516C0EC2A530BC6006CD3D6 /* JJAppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0EB2A530BC6006CD3D6 /* JJAppConfiguration.swift */; };
+		D516C0EE2A530C09006CD3D6 /* JJReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0ED2A530C09006CD3D6 /* JJReachability.swift */; };
+		D516C0F02A530C4D006CD3D6 /* JJNetworkClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0EF2A530C4D006CD3D6 /* JJNetworkClientImpl.swift */; };
+		D516C0F22A5316D7006CD3D6 /* JJDispatchQueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0F12A5316D7006CD3D6 /* JJDispatchQueueType.swift */; };
 		F40B740A3CC748A249C3E56D /* Pods_JJTimes_JJTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC995F8CF1ADADB73043847 /* Pods_JJTimes_JJTimesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +73,19 @@
 		D516C0C82A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesVC.swift; sourceTree = "<group>"; };
 		D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesView.swift; sourceTree = "<group>"; };
+		D516C0D92A5170BC006CD3D6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D516C0DB2A5172C8006CD3D6 /* JJTopStoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesTVC.swift; sourceTree = "<group>"; };
+		D516C0DD2A530713006CD3D6 /* JJTopStoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesModel.swift; sourceTree = "<group>"; };
+		D516C0DF2A5308C8006CD3D6 /* JJTopStoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesViewModel.swift; sourceTree = "<group>"; };
+		D516C0E12A5309B9006CD3D6 /* JJRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJRepository.swift; sourceTree = "<group>"; };
+		D516C0E32A530A48006CD3D6 /* JJTopStoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJTopStoriesRepository.swift; sourceTree = "<group>"; };
+		D516C0E52A530A8E006CD3D6 /* JJNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNetworkClient.swift; sourceTree = "<group>"; };
+		D516C0E72A530AE0006CD3D6 /* JJCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJCache.swift; sourceTree = "<group>"; };
+		D516C0E92A530B1C006CD3D6 /* JJURLWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJURLWrapper.swift; sourceTree = "<group>"; };
+		D516C0EB2A530BC6006CD3D6 /* JJAppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJAppConfiguration.swift; sourceTree = "<group>"; };
+		D516C0ED2A530C09006CD3D6 /* JJReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJReachability.swift; sourceTree = "<group>"; };
+		D516C0EF2A530C4D006CD3D6 /* JJNetworkClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJNetworkClientImpl.swift; sourceTree = "<group>"; };
+		D516C0F12A5316D7006CD3D6 /* JJDispatchQueueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJDispatchQueueType.swift; sourceTree = "<group>"; };
 		ED245B6B61BC64CABCC74479 /* Pods-JJTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimesTests.debug.xcconfig"; path = "Target Support Files/Pods-JJTimesTests/Pods-JJTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +127,6 @@
 				ED245B6B61BC64CABCC74479 /* Pods-JJTimesTests.debug.xcconfig */,
 				6FA6192BEB182156F7CABE25 /* Pods-JJTimesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,8 +167,21 @@
 			children = (
 				D516C0A52A4EDCD1006CD3D6 /* AppDelegate.swift */,
 				D516C0A72A4EDCD1006CD3D6 /* SceneDelegate.swift */,
+				D516C0EB2A530BC6006CD3D6 /* JJAppConfiguration.swift */,
 				D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */,
 				D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */,
+				D516C0DB2A5172C8006CD3D6 /* JJTopStoriesTVC.swift */,
+				D516C0DD2A530713006CD3D6 /* JJTopStoriesModel.swift */,
+				D516C0DF2A5308C8006CD3D6 /* JJTopStoriesViewModel.swift */,
+				D516C0E12A5309B9006CD3D6 /* JJRepository.swift */,
+				D516C0E32A530A48006CD3D6 /* JJTopStoriesRepository.swift */,
+				D516C0E52A530A8E006CD3D6 /* JJNetworkClient.swift */,
+				D516C0EF2A530C4D006CD3D6 /* JJNetworkClientImpl.swift */,
+				D516C0E92A530B1C006CD3D6 /* JJURLWrapper.swift */,
+				D516C0E72A530AE0006CD3D6 /* JJCache.swift */,
+				D516C0ED2A530C09006CD3D6 /* JJReachability.swift */,
+				D516C0D92A5170BC006CD3D6 /* UIView+Extension.swift */,
+				D516C0F12A5316D7006CD3D6 /* JJDispatchQueueType.swift */,
 				D516C0AE2A4EDCD2006CD3D6 /* Assets.xcassets */,
 				D516C0B02A4EDCD2006CD3D6 /* LaunchScreen.storyboard */,
 				D516C0B32A4EDCD2006CD3D6 /* Info.plist */,
@@ -407,8 +445,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D516C0D82A4EE49A006CD3D6 /* JJTopStoriesView.swift in Sources */,
+				D516C0DC2A5172C8006CD3D6 /* JJTopStoriesTVC.swift in Sources */,
+				D516C0F22A5316D7006CD3D6 /* JJDispatchQueueType.swift in Sources */,
+				D516C0E02A5308C8006CD3D6 /* JJTopStoriesViewModel.swift in Sources */,
+				D516C0F02A530C4D006CD3D6 /* JJNetworkClientImpl.swift in Sources */,
+				D516C0E62A530A8E006CD3D6 /* JJNetworkClient.swift in Sources */,
 				D516C0A62A4EDCD1006CD3D6 /* AppDelegate.swift in Sources */,
+				D516C0DE2A530713006CD3D6 /* JJTopStoriesModel.swift in Sources */,
+				D516C0E42A530A48006CD3D6 /* JJTopStoriesRepository.swift in Sources */,
+				D516C0E22A5309B9006CD3D6 /* JJRepository.swift in Sources */,
+				D516C0EA2A530B1C006CD3D6 /* JJURLWrapper.swift in Sources */,
+				D516C0E82A530AE0006CD3D6 /* JJCache.swift in Sources */,
+				D516C0EC2A530BC6006CD3D6 /* JJAppConfiguration.swift in Sources */,
 				D516C0A82A4EDCD1006CD3D6 /* SceneDelegate.swift in Sources */,
+				D516C0DA2A5170BC006CD3D6 /* UIView+Extension.swift in Sources */,
+				D516C0EE2A530C09006CD3D6 /* JJReachability.swift in Sources */,
 				D516C0D62A4EE47A006CD3D6 /* JJTopStoriesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
