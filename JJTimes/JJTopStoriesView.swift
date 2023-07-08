@@ -35,6 +35,7 @@ class JJTopStoriesView: UIView {
     private func setupViewModel() {
         newsViewModel = JJTopStoriesViewModel(newsRepository: JJRepository(), dispatchQueue: DispatchQueue.main)
         newsViewModel.delegate = self
+        newsViewModel.fetchNews()
     }
 
     fileprivate func addTitleLabel() {
