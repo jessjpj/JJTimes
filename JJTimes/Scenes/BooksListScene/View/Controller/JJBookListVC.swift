@@ -1,5 +1,5 @@
 //
-//  JJTopStoriesVC.swift
+//  JJBookListVC.swift
 //  JJTimes
 //
 //  Created by Jeslin Johnson on 30/06/2023.
@@ -8,16 +8,16 @@
 import UIKit
 import PureLayout
 
-class JJTopStoriesVC: UIViewController {
+class JJBookListVC: UIViewController {
 
-    var topStoriesView: JJTopStoriesView?
+    var topStoriesView: JJBooksView?
     override func viewDidLoad() {
         super.viewDidLoad()
-        addTopStoriesView()
+        addBooksView()
     }
 
-    fileprivate func addTopStoriesView() {
-        topStoriesView = JJTopStoriesView(frame: CGRect.zero)
+    fileprivate func addBooksView() {
+        topStoriesView = JJBooksView(frame: CGRect.zero)
         guard let topStoriesView = topStoriesView else { return }
         self.view.addSubview(topStoriesView)
         topStoriesView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)

@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
 
         window?.makeKeyAndVisible()
-        let viewController = JJTopStoriesVC()
+        let viewController = JJBookListVC()
         window?.rootViewController = viewController
     }
 

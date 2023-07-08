@@ -13,10 +13,17 @@ public class JJRepository {
 
     public init() {}
 
-    public func fetchNews(period: Int, completion: @escaping (Result<JJTopStoriesResultModel, Error>) -> Void) {
-        let repository = JJTopStoriesRepository(client: client)
-        repository.fetchNews(period: period) { result in
+    public func fetchBooks(offset: Int, list: String, completion: @escaping (Result<JJBooksResultsModel, Error>) -> Void) {
+        let repository = JJBooksRepository(client: client)
+        repository.fetchBooks(offset: offset, list: list) { result in
             completion(result)
+        }
+    }
+
+    public func fetchCategories(completion: @escaping (Result<JJBooksCategoriesModel, Error>) -> Void) {
+        let repository = JJBooksRepository(client: client)
+        repository.fetchCategories { categories in
+            completion(categories)
         }
     }
 }

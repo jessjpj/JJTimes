@@ -8,11 +8,11 @@
 import Foundation
 
 final class JJAppConfiguration {
-    lazy var mostPopularURL: String = {
-        guard let mostPopularURL = Bundle.main.object(forInfoDictionaryKey: "MostPopularURL") as? String else {
-            fatalError("mostPopularURL must not be empty in plist")
+    lazy var mostPopularBooksURL: String = {
+        guard let mostPopularBooksURL = Bundle.main.object(forInfoDictionaryKey: "MostPopularBooksURL") as? String else {
+            fatalError("MostPopularBooksURL must not be empty in plist")
         }
-        return mostPopularURL
+        return mostPopularBooksURL
     }()
     lazy var apiKEY: String = {
         guard let apiKEY = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String else {
