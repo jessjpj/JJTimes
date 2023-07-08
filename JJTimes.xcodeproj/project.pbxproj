@@ -173,26 +173,13 @@
 		D516C0A42A4EDCD1006CD3D6 /* JJTimes */ = {
 			isa = PBXGroup;
 			children = (
-				D516C0A52A4EDCD1006CD3D6 /* AppDelegate.swift */,
-				D516C0A72A4EDCD1006CD3D6 /* SceneDelegate.swift */,
-				D516C0EB2A530BC6006CD3D6 /* JJAppConfiguration.swift */,
-				D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */,
-				D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */,
-				D516C0DB2A5172C8006CD3D6 /* JJTopStoriesTVC.swift */,
-				D516C0DD2A530713006CD3D6 /* JJTopStoriesModel.swift */,
-				D516C0DF2A5308C8006CD3D6 /* JJTopStoriesViewModel.swift */,
-				D516C0E12A5309B9006CD3D6 /* JJRepository.swift */,
-				D516C0E32A530A48006CD3D6 /* JJTopStoriesRepository.swift */,
-				D516C0E52A530A8E006CD3D6 /* JJNetworkClient.swift */,
-				D516C0EF2A530C4D006CD3D6 /* JJNetworkClientImpl.swift */,
-				D516C0E92A530B1C006CD3D6 /* JJURLWrapper.swift */,
-				D516C0E72A530AE0006CD3D6 /* JJCache.swift */,
-				D516C0ED2A530C09006CD3D6 /* JJReachability.swift */,
-				D516C0D92A5170BC006CD3D6 /* UIView+Extension.swift */,
-				D516C0F32A53357A006CD3D6 /* UITableView+Extension.swift */,
-				D516C0F52A5335B9006CD3D6 /* UITableViewCell+Extension.swift */,
-				D516C0F92A55BC96006CD3D6 /* DispatchQueue+Extension.swift */,
-				D516C0F12A5316D7006CD3D6 /* JJDispatchQueueType.swift */,
+				D516C0FE2A596E24006CD3D6 /* App */,
+				D516C0FF2A596E2D006CD3D6 /* AppConfiguration */,
+				D516C1002A596E5F006CD3D6 /* Scenes */,
+				D516C1082A596EEC006CD3D6 /* Repository */,
+				D516C10B2A596F2F006CD3D6 /* Network */,
+				D516C1092A596F0C006CD3D6 /* Utils */,
+				D516C10A2A596F19006CD3D6 /* Extension */,
 				D516C0AE2A4EDCD2006CD3D6 /* Assets.xcassets */,
 				D516C0B02A4EDCD2006CD3D6 /* LaunchScreen.storyboard */,
 				D516C0B32A4EDCD2006CD3D6 /* Info.plist */,
@@ -215,6 +202,131 @@
 				D516C0C82A4EDCD2006CD3D6 /* JJTimesUITestsLaunchTests.swift */,
 			);
 			path = JJTimesUITests;
+			sourceTree = "<group>";
+		};
+		D516C0FE2A596E24006CD3D6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0A52A4EDCD1006CD3D6 /* AppDelegate.swift */,
+				D516C0A72A4EDCD1006CD3D6 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D516C0FF2A596E2D006CD3D6 /* AppConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0EB2A530BC6006CD3D6 /* JJAppConfiguration.swift */,
+			);
+			path = AppConfiguration;
+			sourceTree = "<group>";
+		};
+		D516C1002A596E5F006CD3D6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D516C1012A596E77006CD3D6 /* NewsListScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D516C1012A596E77006CD3D6 /* NewsListScene */ = {
+			isa = PBXGroup;
+			children = (
+				D516C1042A596EA0006CD3D6 /* View */,
+				D516C1022A596E8C006CD3D6 /* Model */,
+				D516C1032A596E92006CD3D6 /* ViewModel */,
+			);
+			path = NewsListScene;
+			sourceTree = "<group>";
+		};
+		D516C1022A596E8C006CD3D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0DD2A530713006CD3D6 /* JJTopStoriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D516C1032A596E92006CD3D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0DF2A5308C8006CD3D6 /* JJTopStoriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D516C1042A596EA0006CD3D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D516C1052A596EA7006CD3D6 /* Controller */,
+				D516C1062A596EC4006CD3D6 /* View */,
+				D516C1072A596ECA006CD3D6 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D516C1052A596EA7006CD3D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0D52A4EE47A006CD3D6 /* JJTopStoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D516C1062A596EC4006CD3D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0D72A4EE49A006CD3D6 /* JJTopStoriesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D516C1072A596ECA006CD3D6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0DB2A5172C8006CD3D6 /* JJTopStoriesTVC.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D516C1082A596EEC006CD3D6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0E12A5309B9006CD3D6 /* JJRepository.swift */,
+				D516C0E32A530A48006CD3D6 /* JJTopStoriesRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D516C1092A596F0C006CD3D6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0E92A530B1C006CD3D6 /* JJURLWrapper.swift */,
+				D516C0E72A530AE0006CD3D6 /* JJCache.swift */,
+				D516C0ED2A530C09006CD3D6 /* JJReachability.swift */,
+				D516C0F12A5316D7006CD3D6 /* JJDispatchQueueType.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D516C10A2A596F19006CD3D6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0D92A5170BC006CD3D6 /* UIView+Extension.swift */,
+				D516C0F32A53357A006CD3D6 /* UITableView+Extension.swift */,
+				D516C0F52A5335B9006CD3D6 /* UITableViewCell+Extension.swift */,
+				D516C0F92A55BC96006CD3D6 /* DispatchQueue+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D516C10B2A596F2F006CD3D6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0E52A530A8E006CD3D6 /* JJNetworkClient.swift */,
+				D516C0EF2A530C4D006CD3D6 /* JJNetworkClientImpl.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +426,7 @@
 			);
 			mainGroup = D516C0992A4EDCD1006CD3D6;
 			packageReferences = (
-				D516C0FB2A55BEB9006CD3D6 /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
+				D516C0FB2A55BEB9006CD3D6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = D516C0A32A4EDCD1006CD3D6 /* Products */;
 			projectDirPath = "";
@@ -826,7 +938,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D516C0FB2A55BEB9006CD3D6 /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
+		D516C0FB2A55BEB9006CD3D6 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -839,7 +951,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		D516C0FC2A55BEB9006CD3D6 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D516C0FB2A55BEB9006CD3D6 /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			package = D516C0FB2A55BEB9006CD3D6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
