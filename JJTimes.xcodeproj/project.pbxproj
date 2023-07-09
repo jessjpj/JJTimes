@@ -46,6 +46,10 @@
 		D516C1232A5AF437006CD3D6 /* MockJJDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1222A5AF437006CD3D6 /* MockJJDispatchQueue.swift */; };
 		D516C1252A5AF4D7006CD3D6 /* MockJJRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1242A5AF4D7006CD3D6 /* MockJJRepository.swift */; };
 		D516C1272A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1262A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift */; };
+		D516C1302A5B0681006CD3D6 /* JJBookDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C12F2A5B0681006CD3D6 /* JJBookDetailViewTests.swift */; };
+		D516C1322A5B06F0006CD3D6 /* MockJJBookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1312A5B06F0006CD3D6 /* MockJJBookDetailViewModel.swift */; };
+		D516C1342A5B0A57006CD3D6 /* JJBookDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1332A5B0A57006CD3D6 /* JJBookDetailViewModelTests.swift */; };
+		D516C1362A5B0C67006CD3D6 /* MockJJBookDetailViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1352A5B0C67006CD3D6 /* MockJJBookDetailViewModelDelegate.swift */; };
 		F40B740A3CC748A249C3E56D /* Pods_JJTimes_JJTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC995F8CF1ADADB73043847 /* Pods_JJTimes_JJTimesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +118,10 @@
 		D516C1222A5AF437006CD3D6 /* MockJJDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJJDispatchQueue.swift; sourceTree = "<group>"; };
 		D516C1242A5AF4D7006CD3D6 /* MockJJRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJJRepository.swift; sourceTree = "<group>"; };
 		D516C1262A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJJBooksViewModelDelegate.swift; sourceTree = "<group>"; };
+		D516C12F2A5B0681006CD3D6 /* JJBookDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBookDetailViewTests.swift; sourceTree = "<group>"; };
+		D516C1312A5B06F0006CD3D6 /* MockJJBookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJJBookDetailViewModel.swift; sourceTree = "<group>"; };
+		D516C1332A5B0A57006CD3D6 /* JJBookDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBookDetailViewModelTests.swift; sourceTree = "<group>"; };
+		D516C1352A5B0C67006CD3D6 /* MockJJBookDetailViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJJBookDetailViewModelDelegate.swift; sourceTree = "<group>"; };
 		ED245B6B61BC64CABCC74479 /* Pods-JJTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimesTests.debug.xcconfig"; path = "Target Support Files/Pods-JJTimesTests/Pods-JJTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,9 +220,7 @@
 		D516C0BB2A4EDCD2006CD3D6 /* JJTimesTests */ = {
 			isa = PBXGroup;
 			children = (
-				D516C0BC2A4EDCD2006CD3D6 /* JJTimesTests.swift */,
-				D516C11C2A5AEBF9006CD3D6 /* JJBookListVCTests.swift */,
-				D516C1202A5AF397006CD3D6 /* JJBooksViewModelTests.swift */,
+				D516C1292A5B029E006CD3D6 /* Scenes */,
 				D516C1282A5AF6A5006CD3D6 /* Utils */,
 			);
 			path = JJTimesTests;
@@ -397,8 +403,38 @@
 				D516C1222A5AF437006CD3D6 /* MockJJDispatchQueue.swift */,
 				D516C1242A5AF4D7006CD3D6 /* MockJJRepository.swift */,
 				D516C1262A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift */,
+				D516C1352A5B0C67006CD3D6 /* MockJJBookDetailViewModelDelegate.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		D516C1292A5B029E006CD3D6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D516C12A2A5B02BC006CD3D6 /* BooksListScene */,
+				D516C1372A5B0CD4006CD3D6 /* BookDetailScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D516C12A2A5B02BC006CD3D6 /* BooksListScene */ = {
+			isa = PBXGroup;
+			children = (
+				D516C0BC2A4EDCD2006CD3D6 /* JJTimesTests.swift */,
+				D516C11C2A5AEBF9006CD3D6 /* JJBookListVCTests.swift */,
+				D516C1202A5AF397006CD3D6 /* JJBooksViewModelTests.swift */,
+			);
+			path = BooksListScene;
+			sourceTree = "<group>";
+		};
+		D516C1372A5B0CD4006CD3D6 /* BookDetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				D516C12F2A5B0681006CD3D6 /* JJBookDetailViewTests.swift */,
+				D516C1332A5B0A57006CD3D6 /* JJBookDetailViewModelTests.swift */,
+				D516C1312A5B06F0006CD3D6 /* MockJJBookDetailViewModel.swift */,
+			);
+			path = BookDetailScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -685,7 +721,11 @@
 				D516C1272A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift in Sources */,
 				D516C1252A5AF4D7006CD3D6 /* MockJJRepository.swift in Sources */,
 				D516C1212A5AF397006CD3D6 /* JJBooksViewModelTests.swift in Sources */,
+				D516C1362A5B0C67006CD3D6 /* MockJJBookDetailViewModelDelegate.swift in Sources */,
+				D516C1322A5B06F0006CD3D6 /* MockJJBookDetailViewModel.swift in Sources */,
 				D516C1232A5AF437006CD3D6 /* MockJJDispatchQueue.swift in Sources */,
+				D516C1342A5B0A57006CD3D6 /* JJBookDetailViewModelTests.swift in Sources */,
+				D516C1302A5B0681006CD3D6 /* JJBookDetailViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

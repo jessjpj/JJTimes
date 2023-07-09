@@ -123,13 +123,19 @@ class JJBookDetailView: UIView {
         bookDetailScrollViewContainer.widthAnchor.constraint(equalTo: bookDetailScrollView.widthAnchor).isActive = true
     }
 
-    private func setupViewModel() {
-        bookDetailViewModel = JJBookDetailViewModel(bookDetailsRepository: JJRepository(), dispatchQueue: DispatchQueue.main, primaryisbn10: primaryisbn10, bookPublishedDate: bookPublishedDate, bookCategory: bookCategory)
+    func setupViewModel() {
+        if bookDetailViewModel == nil {
+            bookDetailViewModel = JJBookDetailViewModel(bookDetailsRepository: JJRepository(), dispatchQueue: DispatchQueue.main, primaryisbn10: primaryisbn10, bookPublishedDate: bookPublishedDate, bookCategory: bookCategory)
+        }
+        callAPI()
+    }
+
+    func callAPI() {
         bookDetailViewModel.delegate = self
         bookDetailViewModel.fetchBookDetails()
     }
 
-    private func loadUI() {
+    func loadUI() {
         bookDetailImageView.sd_setImage(with: URL(string: bookDetailViewModel.bookImage()))
         titleLabel.text = bookDetailViewModel.bookTitle()
         descriptionLabel.text = bookDetailViewModel.bookDescription()
