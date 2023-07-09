@@ -158,6 +158,15 @@ extension JJBooksView: UITableViewDelegate {
             booksViewModel.incrementOffSetAndFetch()
         }
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = JJBookDetailVC()
+        controller.modalTransitionStyle = .crossDissolve
+        controller.bookCategory = booksViewModel.categoryName
+        controller.bookPublishedDate = booksViewModel.bookPublishDate(at: indexPath)
+        controller.primaryisbn10 = booksViewModel.bookPrimaryisbn10(at: indexPath)
+        self.findViewController()?.present(controller, animated: true)
+    }
 }
 
 extension JJBooksView: JJTopStoriesViewModelDelegate {

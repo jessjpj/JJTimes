@@ -9,21 +9,24 @@ import UIKit
 
 class JJBookDetailVC: UIViewController {
 
+    var bookDetailView: JJBookDetailView?
+    var primaryisbn10: String = ""
+    var bookPublishedDate: String = ""
+    var bookCategory: String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addBookDetailView()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    fileprivate func addBookDetailView() {
+        bookDetailView = JJBookDetailView(frame: CGRect.zero)
+        guard let bookDetailView = bookDetailView else { return }
+        bookDetailView.primaryisbn10 = primaryisbn10
+        bookDetailView.bookPublishedDate = bookPublishedDate
+        bookDetailView.bookCategory = bookCategory
+        self.view.addSubview(bookDetailView)
+        bookDetailView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
     }
-    */
 
 }
