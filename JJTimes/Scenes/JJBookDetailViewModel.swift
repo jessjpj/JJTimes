@@ -48,10 +48,30 @@ class JJBookDetailViewModel {
         }
     }
 
-    func bookImage() -> String {
+    fileprivate func getBook() -> Book? {
         let book = bookDetailsModel?.results.books.first(where: { book in
             book.primaryIsbn10 == primaryisbn10
         })
-        return book?.bookImage ?? ""
+        return book
+    }
+
+    func bookImage() -> String {
+        return getBook()?.bookImage ?? ""
+    }
+
+    func bookTitle() -> String {
+        return getBook()?.title ?? ""
+    }
+
+    func bookDescription() -> String {
+        return getBook()?.description ?? ""
+    }
+
+    func bookAuthor() -> String {
+        return getBook()?.author ?? ""
+    }
+
+    func bookPublisher() -> String {
+        return getBook()?.publisher ?? ""
     }
 }

@@ -23,7 +23,7 @@ class JJBookDetailView: UIView {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         return scrollView
     }()
-    
+
     let bookDetailScrollViewContainer: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
@@ -36,6 +36,52 @@ class JJBookDetailView: UIView {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
+    }()
+
+    let bookDetailsView: UIView = {
+       let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    let bookDetailStackView: UIStackView = {
+        let view = UIStackView()
+        view.axis = .vertical
+        view.spacing = 10
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    var titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .boldSystemFont(ofSize: 24)
+        label.numberOfLines = 0
+        return label
+    }()
+
+    var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 20)
+        label.numberOfLines = 0
+        return label
+    }()
+
+    var authorLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 14)
+        label.numberOfLines = 0
+        return label
+    }()
+
+    var publisherLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .boldSystemFont(ofSize: 14)
+        label.numberOfLines = 0
+        return label
     }()
 
     override init(frame: CGRect) {
@@ -52,6 +98,19 @@ class JJBookDetailView: UIView {
         self.addSubview(bookDetailScrollView)
         bookDetailScrollView.addSubview(bookDetailScrollViewContainer)
         bookDetailScrollViewContainer.addArrangedSubview(bookDetailImageView)
+        bookDetailScrollViewContainer.addArrangedSubview(bookDetailsView)
+
+        bookDetailsView.addSubview(bookDetailStackView)
+        bookDetailStackView.leadingAnchor.constraint(equalTo: bookDetailsView.leadingAnchor, constant: 5).isActive = true
+        bookDetailStackView.trailingAnchor.constraint(equalTo: bookDetailsView.trailingAnchor, constant: -5).isActive = true
+        bookDetailStackView.topAnchor.constraint(equalTo: bookDetailsView.topAnchor, constant: 5).isActive = true
+        bookDetailStackView.bottomAnchor.constraint(equalTo: bookDetailsView.bottomAnchor, constant: 5).isActive = true
+
+        bookDetailStackView.addArrangedSubview(titleLabel)
+        bookDetailStackView.addArrangedSubview(descriptionLabel)
+        bookDetailStackView.addArrangedSubview(authorLabel)
+        bookDetailStackView.addArrangedSubview(publisherLabel)
+
         bookDetailScrollView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         bookDetailScrollView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         bookDetailScrollView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
@@ -72,6 +131,10 @@ class JJBookDetailView: UIView {
 
     private func loadUI() {
         bookDetailImageView.sd_setImage(with: URL(string: bookDetailViewModel.bookImage()))
+        titleLabel.text = bookDetailViewModel.bookTitle()
+        descriptionLabel.text = bookDetailViewModel.bookDescription()
+        authorLabel.text = "Authored by: \(bookDetailViewModel.bookAuthor())"
+        publisherLabel.text = "Published by: \(bookDetailViewModel.bookPublisher())"
     }
 }
 
