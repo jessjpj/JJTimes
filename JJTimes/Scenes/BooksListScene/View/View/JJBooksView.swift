@@ -70,7 +70,7 @@ class JJBooksView: UIView {
     }
 
     fileprivate func setupTitleLabel() {
-        titleLabel.text = "NY Times Most Popular"
+        titleLabel.text = "NY Times Most Popular Books"
         titleLabel.font = .systemFont(ofSize: 24)
         titleLabel.textAlignment = .center
     }
