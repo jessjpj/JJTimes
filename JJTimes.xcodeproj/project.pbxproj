@@ -235,10 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				D516C1012A596E77006CD3D6 /* BooksListScene */,
-				D516C1102A5AA663006CD3D6 /* JJBookDetailVC.swift */,
-				D516C1122A5AA761006CD3D6 /* JJBookDetailView.swift */,
-				D516C1142A5AB364006CD3D6 /* JJBookDetailViewModel.swift */,
-				D516C1162A5AB605006CD3D6 /* JJBookDetailModel.swift */,
+				D516C1182A5ADC09006CD3D6 /* BookDetailScene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -342,6 +339,41 @@
 				D516C0EF2A530C4D006CD3D6 /* JJNetworkClientImpl.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D516C1182A5ADC09006CD3D6 /* BookDetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				D516C1192A5ADC1E006CD3D6 /* View */,
+				D516C11A2A5ADC25006CD3D6 /* ViewModel */,
+				D516C11B2A5ADC2E006CD3D6 /* Model */,
+			);
+			path = BookDetailScene;
+			sourceTree = "<group>";
+		};
+		D516C1192A5ADC1E006CD3D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D516C1102A5AA663006CD3D6 /* JJBookDetailVC.swift */,
+				D516C1122A5AA761006CD3D6 /* JJBookDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D516C11A2A5ADC25006CD3D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D516C1142A5AB364006CD3D6 /* JJBookDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D516C11B2A5ADC2E006CD3D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D516C1162A5AB605006CD3D6 /* JJBookDetailModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
