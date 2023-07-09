@@ -83,6 +83,10 @@ class JJBooksView: UIView {
     }
 
     fileprivate func setupFilterButton() {
+        filterImageButton.addTarget(self, action: #selector(selectDropDown), for: .touchUpInside)
+    }
+
+    @objc func selectDropDown(sender: AnyObject) {
         
     }
 
