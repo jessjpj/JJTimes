@@ -8,6 +8,8 @@
 import Foundation
 
 protocol JJTopStoriesViewModelDelegate: AnyObject {
+    func startLoading()
+    func stopLoading()
     func booksDidFetch()
     func categoriesDidFetch()
 }
@@ -63,9 +65,13 @@ class JJBooksViewModel {
         if isFetching || ((booksModel?.books?.numResults ?? 0) < 20 && offset > 0) {
             return
         }
+        self.delegate?.startLoading()
         isFetching = true
         booksRepository.fetchBooks(offset: offset, list: categoryName) { [weak self] result in
             self?.isFetching = false
+            self?.dispatchQueue.async {
+                self?.delegate?.stopLoading()
+            }
             switch result {
             case .success(let books):
                 if self?.offset == 0 {

@@ -170,6 +170,14 @@ extension JJBooksView: UITableViewDelegate {
 }
 
 extension JJBooksView: JJTopStoriesViewModelDelegate {
+    func stopLoading() {
+        self.hideLoading()
+    }
+    
+    func startLoading() {
+        self.showLoading(showProgress: true)
+    }
+    
     func categoriesDidFetch() {
         configureDropDown()
     }

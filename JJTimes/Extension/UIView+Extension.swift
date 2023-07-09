@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ANActivityIndicator
 
 extension UIView {
     func addSubViewWithConstraints(subview: UIView) {
@@ -23,5 +24,21 @@ extension UIView {
         } else {
             return nil
         }
+    }
+}
+
+extension UIView {
+    func showLoading(showProgress: Bool) {
+        self.isUserInteractionEnabled = false
+        if showProgress {
+            ANActivityIndicatorPresenter.shared.showIndicator(
+                    CGSize(width: 60, height: 60),
+                    animationType: ANActivityIndicatorAnimationType.lineScaleParty)
+        }
+    }
+
+    func hideLoading() {
+        self.isUserInteractionEnabled = true
+        ANActivityIndicatorPresenter.shared.hideIndicator()
     }
 }

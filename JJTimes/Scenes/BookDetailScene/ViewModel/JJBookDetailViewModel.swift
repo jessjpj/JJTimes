@@ -8,6 +8,8 @@
 import Foundation
 
 protocol JJBookDetailViewModelDelegate: AnyObject {
+    func startLoading()
+    func stopLoading()
     func bookDetailDidFetch()
 }
 
@@ -38,7 +40,11 @@ class JJBookDetailViewModel {
     }
 
     func fetchBookDetails() {
+        self.delegate?.startLoading()
         bookDetailsRepository.fetchBookDetails(date: bookPublishedDate, list: bookCategory) { [weak self] result in
+            self?.dispatchQueue.async {
+                self?.delegate?.stopLoading()
+            }
             switch result {
             case .success(let books):
                 self?.bookDetailsModel = books

@@ -139,6 +139,14 @@ class JJBookDetailView: UIView {
 }
 
 extension JJBookDetailView: JJBookDetailViewModelDelegate {
+    func startLoading() {
+        self.showLoading(showProgress: true)
+    }
+    
+    func stopLoading() {
+        self.hideLoading()
+    }
+    
     func bookDetailDidFetch() {
         loadUI()
     }
