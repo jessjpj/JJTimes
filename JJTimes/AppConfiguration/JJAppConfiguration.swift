@@ -15,9 +15,11 @@ final class JJAppConfiguration {
         return mostPopularBooksURL
     }()
     lazy var apiKEY: String = {
-        guard let apiKEY = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String else {
-            fatalError("apiKEY must not be empty in plist")
-        }
+        let apiKEY = apiKeys.first ?? ""
+        apiKeys.removeFirst()
+        apiKeys.append(apiKEY)
         return apiKEY
     }()
 }
+// work around to fetch the api's as the nytimes restrict the usage of api calls using the apikey 4 times a minute
+var apiKeys = ["j3NUZk32eA9SoLn3lo4HWfUSRM0ba3G3", "IINdwaUD0vhe9k7B18fwy7FnZ05DUUMo", "V0M6Neu415DKhVk65hqjSu7w50jO4CtT", "16xi24ZXB2sE60QXla02aQH7NiVKAlXa", "mciCt4ZwycfC9WjB5WLQOM7MqpCRdjpo"]
