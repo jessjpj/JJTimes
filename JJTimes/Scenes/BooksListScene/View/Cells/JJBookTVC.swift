@@ -15,6 +15,7 @@ class JJBookTVC: UITableViewCell {
     var bookAuthorLabel: UILabel!
     var bookPublisherLabel: UILabel!
     var bookContentsStackView: UIStackView!
+    var containerView: UIView!
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -37,21 +38,25 @@ class JJBookTVC: UITableViewCell {
     }
 
     fileprivate func addSubViews() {
+        containerView = UIView()
         bookTitleLabel = UILabel()
         bookAbstractLabel = UILabel()
         bookAuthorLabel = UILabel()
         bookPublisherLabel = UILabel()
         bookContentsStackView = UIStackView(arrangedSubviews: [bookTitleLabel, bookAbstractLabel, bookAuthorLabel, bookPublisherLabel])
-        contentView.addSubViewWithConstraints(subview: bookContentsStackView)
+        containerView.addSubViewWithConstraints(subview: bookContentsStackView)
+        contentView.addSubViewWithConstraints(subview: containerView)
     }
 
     fileprivate func setConstraintsForSubViews() {
-        bookContentsStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5).isActive = true
-        bookContentsStackView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5).isActive = true
-        bookContentsStackView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5).isActive = true
-        let stackViewBottomAnchorConstraint = bookContentsStackView.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -10)
-        stackViewBottomAnchorConstraint.isActive = true
-        stackViewBottomAnchorConstraint.priority = .init(rawValue: 999.0)
+        bookContentsStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 5).isActive = true
+        bookContentsStackView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 5).isActive = true
+        bookContentsStackView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -5).isActive = true
+        bookContentsStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10).isActive = true
+        containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5).isActive = true
+        containerView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5).isActive = true
+        containerView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5).isActive = true
+        containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
     }
 
     fileprivate func setupStyles() {
@@ -66,5 +71,9 @@ class JJBookTVC: UITableViewCell {
         bookContentsStackView.distribution = .fill
         bookContentsStackView.axis = .vertical
         bookContentsStackView.spacing = 2
+        containerView.layer.borderColor = UIColor(named: "jjAppBlackColor")?.cgColor
+        containerView.layer.borderWidth = 2
+        containerView.layer.cornerRadius = 10
+        containerView.layer.masksToBounds = true
     }
 }
