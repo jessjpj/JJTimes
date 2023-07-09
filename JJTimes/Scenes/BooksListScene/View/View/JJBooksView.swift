@@ -11,6 +11,8 @@ import SDWebImage
 class JJBooksView: UIView {
 
     var titleLabel: UILabel!
+    var filterImageButton: UIButton!
+    var filterImageView: UIImageView!
     var bookListTableView: UITableView!
     var booksViewModel: JJBooksViewModel!
 
@@ -28,6 +30,10 @@ class JJBooksView: UIView {
     private func setupUI() {
         addTitleLabel()
         setupTitleLabel()
+        addFilterImageView()
+        setupFilterImageView()
+        addFilterButton()
+        setupFilterButton()
         addTableView()
         setupTableView()
     }
@@ -50,6 +56,34 @@ class JJBooksView: UIView {
         titleLabel.text = "NY Times Most Popular"
         titleLabel.font = .systemFont(ofSize: 24)
         titleLabel.textAlignment = .center
+    }
+
+    fileprivate func addFilterImageView() {
+        filterImageView = UIImageView(forAutoLayout: ())
+        self.addSubview(filterImageView)
+        filterImageView.autoPinEdge(toSuperviewSafeArea: .top)
+        filterImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
+        filterImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        filterImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
+    }
+
+    fileprivate func setupFilterImageView() {
+        filterImageView.tintColor = UIColor(named: "jjAppBlackColor")
+        filterImageView.image = UIImage(named: "jjFilterIcon")
+        filterImageView.contentMode = .scaleAspectFit
+    }
+
+    fileprivate func addFilterButton() {
+        filterImageButton = UIButton(forAutoLayout: ())
+        self.addSubview(filterImageButton)
+        filterImageButton.autoPinEdge(toSuperviewSafeArea: .top)
+        filterImageButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
+        filterImageButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        filterImageButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
+    }
+
+    fileprivate func setupFilterButton() {
+        
     }
 
     fileprivate func addTableView() {
