@@ -31,14 +31,14 @@ class JJBooksView: UIView {
     }
 
     private func setupUI() {
-        addTitleLabel()
-        setupTitleLabel()
-        addUnderLineLabel()
-        setupUnderLineLabel()
         addFilterImageView()
         setupFilterImageView()
         addFilterButton()
         setupFilterButton()
+        addTitleLabel()
+        setupTitleLabel()
+        addUnderLineLabel()
+        setupUnderLineLabel()
         addTableView()
         setupTableView()
     }
@@ -52,7 +52,7 @@ class JJBooksView: UIView {
     fileprivate func addTitleLabel() {
         titleLabel = UILabel(forAutoLayout: ())
         self.addSubview(titleLabel)
-        titleLabel.autoPinEdge(toSuperviewSafeArea: .top)
+        titleLabel.autoPinEdge(.top, to: .bottom, of: filterImageButton)
         titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     }
 
@@ -116,7 +116,7 @@ class JJBooksView: UIView {
     fileprivate func addTableView() {
         bookListTableView = UITableView(forAutoLayout: ())
         self.addSubview(bookListTableView)
-        bookListTableView.autoPinEdge(.top, to: .bottom, of: underlineLabel)
+        bookListTableView.autoPinEdge(.top, to: .bottom, of: underlineLabel, withOffset: 5)
         bookListTableView.autoPinEdge(toSuperviewEdge: .left)
         bookListTableView.autoPinEdge(toSuperviewEdge: .right)
         bookListTableView.autoPinEdge(toSuperviewEdge: .bottom)
@@ -128,6 +128,7 @@ class JJBooksView: UIView {
         bookListTableView.dataSource = self
         bookListTableView.rowHeight = UITableView.automaticDimension
         bookListTableView.estimatedRowHeight = 400
+        bookListTableView.separatorStyle = .none
     }
 
     fileprivate func configureDropDown() {

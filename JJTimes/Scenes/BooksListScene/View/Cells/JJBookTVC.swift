@@ -71,7 +71,8 @@ class JJBookTVC: UITableViewCell {
         bookContentsStackView.distribution = .fill
         bookContentsStackView.axis = .vertical
         bookContentsStackView.spacing = 2
-        containerView.layer.borderColor = UIColor(named: "jjAppBlackColor")?.cgColor
+        containerView.layer.borderColor = UIColor.clear.cgColor
+        containerView.backgroundColor = .systemGray6
         containerView.layer.borderWidth = 2
         containerView.layer.cornerRadius = 10
         containerView.layer.masksToBounds = true
