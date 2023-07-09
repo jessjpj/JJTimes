@@ -7,6 +7,7 @@ target 'JJTimes' do
 
   # Pods for JJTimes
   pod 'PureLayout'
+  pod 'DropDown'
   target 'JJTimesTests' do
     inherit! :search_paths
     # Pods for testing

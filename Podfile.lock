@@ -1,16 +1,20 @@
 PODS:
+  - DropDown (2.3.13)
   - PureLayout (3.1.9)
 
 DEPENDENCIES:
+  - DropDown
   - PureLayout
 
 SPEC REPOS:
   trunk:
+    - DropDown
     - PureLayout
 
 SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
 
-PODFILE CHECKSUM: 2d9ef2853479139ca2bb33c1d602bc4c7b55e351
+PODFILE CHECKSUM: d9244d828baee6cc0ac24f991d31fde8e829b87e
 
 COCOAPODS: 1.12.1
