@@ -12,6 +12,7 @@ import DropDown
 class JJBooksView: UIView {
 
     var titleLabel: UILabel!
+    var underlineLabel: UILabel!
     var filterImageButton: UIButton!
     var filterImageView: UIImageView!
     var bookListTableView: UITableView!
@@ -32,6 +33,8 @@ class JJBooksView: UIView {
     private func setupUI() {
         addTitleLabel()
         setupTitleLabel()
+        addUnderLineLabel()
+        setupUnderLineLabel()
         addFilterImageView()
         setupFilterImageView()
         addFilterButton()
@@ -50,8 +53,20 @@ class JJBooksView: UIView {
         titleLabel = UILabel(forAutoLayout: ())
         self.addSubview(titleLabel)
         titleLabel.autoPinEdge(toSuperviewSafeArea: .top)
-        titleLabel.autoPinEdge(toSuperviewEdge: .left)
-        titleLabel.autoPinEdge(toSuperviewEdge: .right)
+        titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+    }
+
+    fileprivate func addUnderLineLabel() {
+        underlineLabel = UILabel(forAutoLayout: ())
+        self.addSubview(underlineLabel)
+        underlineLabel.autoPinEdge(.top, to: .bottom, of: titleLabel, withOffset: 5)
+        underlineLabel.leftAnchor.constraint(equalTo: titleLabel.leftAnchor, constant: -4).isActive = true
+        underlineLabel.rightAnchor.constraint(equalTo: titleLabel.rightAnchor, constant: 4).isActive = true
+        underlineLabel.heightAnchor.constraint(equalToConstant: 2).isActive = true
+    }
+
+    fileprivate func setupUnderLineLabel() {
+        underlineLabel.backgroundColor = UIColor(named: "jjAppBlackColor")
     }
 
     fileprivate func setupTitleLabel() {
@@ -101,7 +116,7 @@ class JJBooksView: UIView {
     fileprivate func addTableView() {
         bookListTableView = UITableView(forAutoLayout: ())
         self.addSubview(bookListTableView)
-        bookListTableView.autoPinEdge(.top, to: .bottom, of: titleLabel)
+        bookListTableView.autoPinEdge(.top, to: .bottom, of: underlineLabel)
         bookListTableView.autoPinEdge(toSuperviewEdge: .left)
         bookListTableView.autoPinEdge(toSuperviewEdge: .right)
         bookListTableView.autoPinEdge(toSuperviewEdge: .bottom)
