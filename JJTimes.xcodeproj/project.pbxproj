@@ -36,6 +36,7 @@
 		D516C0FA2A55BC96006CD3D6 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C0F92A55BC96006CD3D6 /* DispatchQueue+Extension.swift */; };
 		D516C0FD2A55BEB9006CD3D6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D516C0FC2A55BEB9006CD3D6 /* SDWebImage */; };
 		D516C10D2A599122006CD3D6 /* JJBooksCategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C10C2A599122006CD3D6 /* JJBooksCategoriesModel.swift */; };
+		D516C1112A5AA663006CD3D6 /* JJBookDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1102A5AA663006CD3D6 /* JJBookDetailVC.swift */; };
 		F40B740A3CC748A249C3E56D /* Pods_JJTimes_JJTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC995F8CF1ADADB73043847 /* Pods_JJTimes_JJTimesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		D516C0F52A5335B9006CD3D6 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		D516C0F92A55BC96006CD3D6 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
 		D516C10C2A599122006CD3D6 /* JJBooksCategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBooksCategoriesModel.swift; sourceTree = "<group>"; };
+		D516C1102A5AA663006CD3D6 /* JJBookDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBookDetailVC.swift; sourceTree = "<group>"; };
 		ED245B6B61BC64CABCC74479 /* Pods-JJTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimesTests.debug.xcconfig"; path = "Target Support Files/Pods-JJTimesTests/Pods-JJTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				D516C1012A596E77006CD3D6 /* BooksListScene */,
+				D516C1102A5AA663006CD3D6 /* JJBookDetailVC.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				D516C0F22A5316D7006CD3D6 /* JJDispatchQueueType.swift in Sources */,
 				D516C0E02A5308C8006CD3D6 /* JJBooksViewModel.swift in Sources */,
 				D516C0F02A530C4D006CD3D6 /* JJNetworkClientImpl.swift in Sources */,
+				D516C1112A5AA663006CD3D6 /* JJBookDetailVC.swift in Sources */,
 				D516C0E62A530A8E006CD3D6 /* JJNetworkClient.swift in Sources */,
 				D516C0A62A4EDCD1006CD3D6 /* AppDelegate.swift in Sources */,
 				D516C10D2A599122006CD3D6 /* JJBooksCategoriesModel.swift in Sources */,
