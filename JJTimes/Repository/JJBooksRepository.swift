@@ -52,4 +52,19 @@ class JJBooksRepository {
             }
         }
     }
+
+    func fetchBookDetails(date: String, list: String, completion: @escaping (Result<JJBookDetailModel, Error>) -> Void) {
+        let baseURLString = JJAppConfiguration().mostPopularBooksURL
+        let apiKey = JJAppConfiguration().apiKEY
+        let combinedURLString = baseURLString + "/lists/\(date)/\(list).json?api-key=" + apiKey
+        let url = URL(string: combinedURLString)!
+        client.get(url: url) { (result: Result<JJBookDetailModel, Error>) in
+            switch result {
+            case .success(let categories):
+                completion(.success(categories))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

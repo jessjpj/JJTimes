@@ -26,4 +26,11 @@ public class JJRepository {
             completion(categories)
         }
     }
+
+    public func fetchBookDetails(date: String, list: String, completion: @escaping (Result<JJBookDetailModel, Error>) -> Void) {
+        let repository = JJBooksRepository(client: client)
+        repository.fetchBookDetails(date: date, list: list) { result in
+            completion(result)
+        }
+    }
 }

@@ -17,7 +17,7 @@ class JJBooksViewModel {
     private let booksRepository: JJRepository
     private let dispatchQueue: JJDispatchQueueType
     private var offset: Int
-    private var categoryName: String
+    var categoryName: String
     private var isFetching = false
 
     var booksModel: JJBooksModel? {
@@ -111,5 +111,13 @@ class JJBooksViewModel {
 
     func bookPublishedBy(at indexPath: IndexPath) -> String {
         return booksModel?.books?.results[indexPath.row].bookDetails.first?.publisher ?? ""
+    }
+
+    func bookPrimaryisbn10(at indexPath: IndexPath) -> String {
+        return booksModel?.books?.results[indexPath.row].bookDetails.first?.primaryIsbn10 ?? ""
+    }
+
+    func bookPublishDate(at indexPath: IndexPath) -> String {
+        return booksModel?.books?.results[indexPath.row].publishedDate ?? ""
     }
 }
