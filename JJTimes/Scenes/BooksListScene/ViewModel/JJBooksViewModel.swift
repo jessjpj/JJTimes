@@ -9,6 +9,7 @@ import Foundation
 
 protocol JJTopStoriesViewModelDelegate: AnyObject {
     func booksDidFetch()
+    func categoriesDidFetch()
 }
 
 class JJBooksViewModel {
@@ -31,6 +32,7 @@ class JJBooksViewModel {
             dispatchQueue.async { [weak self] in
                 self?.offset = 0
                 self?.categoryName = self?.categoriesModel?.results[0].listNameEncoded ?? ""
+                self?.delegate?.categoriesDidFetch()
                 self?.fetchBooks()
             }
         }
@@ -67,8 +69,14 @@ class JJBooksViewModel {
         }
     }
 
+    func resetBooksList(categoryName: String) {
+        offset = 0
+        self.categoryName = categoryName
+        fetchBooks()
+    }
+
     func incrementOffSet() {
-        offset += 1
+        offset += 20
         fetchBooks()
     }
 

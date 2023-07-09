@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import DropDown
 
 class JJBooksView: UIView {
 
@@ -15,6 +16,7 @@ class JJBooksView: UIView {
     var filterImageView: UIImageView!
     var bookListTableView: UITableView!
     var booksViewModel: JJBooksViewModel!
+    let filterDropDown = DropDown()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -87,7 +89,13 @@ class JJBooksView: UIView {
     }
 
     @objc func selectDropDown(sender: AnyObject) {
-        
+        filterDropDown.show()
+        filterDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+            let encodedCategory = self.booksViewModel.categoriesModel?.results.first(where: { category in
+                category.displayName == item
+            })
+            self.booksViewModel.resetBooksList(categoryName: encodedCategory?.listNameEncoded ?? "")
+        }
     }
 
     fileprivate func addTableView() {
@@ -105,6 +113,11 @@ class JJBooksView: UIView {
         bookListTableView.dataSource = self
         bookListTableView.rowHeight = UITableView.automaticDimension
         bookListTableView.estimatedRowHeight = 400
+    }
+
+    fileprivate func configureDropDown() {
+        filterDropDown.anchorView = filterImageButton
+        filterDropDown.dataSource = booksViewModel.categoriesModel?.results.map { $0.displayName } ?? [String]()
     }
 }
 
@@ -129,6 +142,10 @@ extension JJBooksView: UITableViewDelegate {
 }
 
 extension JJBooksView: JJTopStoriesViewModelDelegate {
+    func categoriesDidFetch() {
+        configureDropDown()
+    }
+    
     func booksDidFetch() {
         bookListTableView.reloadData()
     }

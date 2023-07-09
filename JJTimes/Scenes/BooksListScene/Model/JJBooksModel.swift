@@ -19,13 +19,11 @@ class JJBooksModel: Codable {
 
 // MARK: - JJBooksResults
 public struct JJBooksResultsModel: Codable {
-    let status, copyright: String
     let numResults: Int
     let lastModified: String
     let results: [JJBooksResult]
 
     enum CodingKeys: String, CodingKey {
-        case status, copyright
         case numResults = "num_results"
         case lastModified = "last_modified"
         case results
