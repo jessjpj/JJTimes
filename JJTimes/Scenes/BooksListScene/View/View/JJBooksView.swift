@@ -134,11 +134,14 @@ extension JJBooksView: UITableViewDataSource {
         cell.bookPublisherLabel.text = "Publisher: \(booksViewModel.bookPublishedBy(at: indexPath))"
         return cell
     }
-
 }
 
 extension JJBooksView: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row >= booksViewModel.numberOfBooks() - 10 {
+            booksViewModel.incrementOffSetAndFetch()
+        }
+    }
 }
 
 extension JJBooksView: JJTopStoriesViewModelDelegate {

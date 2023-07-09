@@ -18,6 +18,7 @@ class JJBooksViewModel {
     private let dispatchQueue: JJDispatchQueueType
     private var offset: Int
     private var categoryName: String
+    private var isFetching = false
 
     var booksModel: JJBooksModel? {
         didSet {
@@ -59,12 +60,24 @@ class JJBooksViewModel {
     }
 
     func fetchBooks() {
+        if isFetching || ((booksModel?.books?.numResults ?? 0) < 20 && offset > 0) {
+            return
+        }
+        isFetching = true
         booksRepository.fetchBooks(offset: offset, list: categoryName) { [weak self] result in
+            self?.isFetching = false
             switch result {
             case .success(let books):
-                self?.booksModel = JJBooksModel(model: books)
+                if self?.offset == 0 {
+                    self?.booksModel = JJBooksModel(model: books)
+                } else {
+                    self?.booksModel?.books?.results.append(contentsOf: books.results)
+                }
             case .failure(let error):
                 print(error)
+                if (self?.offset ?? 0) > 0 {
+                    self?.offset -= 20
+                }
             }
         }
     }
@@ -75,7 +88,7 @@ class JJBooksViewModel {
         fetchBooks()
     }
 
-    func incrementOffSet() {
+    func incrementOffSetAndFetch() {
         offset += 20
         fetchBooks()
     }

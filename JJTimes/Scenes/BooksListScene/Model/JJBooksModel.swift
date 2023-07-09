@@ -21,7 +21,7 @@ class JJBooksModel: Codable {
 public struct JJBooksResultsModel: Codable {
     let numResults: Int
     let lastModified: String
-    let results: [JJBooksResult]
+    var results: [JJBooksResult]
 
     enum CodingKeys: String, CodingKey {
         case numResults = "num_results"
