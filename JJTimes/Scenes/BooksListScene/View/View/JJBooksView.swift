@@ -18,7 +18,7 @@ class JJBooksView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .white
+        self.backgroundColor = UIColor(named: "jjAppWhiteColor")
         setupUI()
         setupViewModel()
     }
