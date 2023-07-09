@@ -16,7 +16,7 @@ class JJBookListVC: UIViewController {
         addBooksView()
     }
 
-    fileprivate func addBooksView() {
+    func addBooksView() {
         topStoriesView = JJBooksView(frame: CGRect.zero)
         guard let topStoriesView = topStoriesView else { return }
         self.view.addSubview(topStoriesView)

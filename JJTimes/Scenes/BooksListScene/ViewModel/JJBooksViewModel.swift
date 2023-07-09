@@ -18,7 +18,7 @@ class JJBooksViewModel {
 
     private let booksRepository: JJRepository
     private let dispatchQueue: JJDispatchQueueType
-    private var offset: Int
+    var offset: Int
     var categoryName: String
     private var isFetching = false
 
@@ -34,7 +34,7 @@ class JJBooksViewModel {
         didSet {
             dispatchQueue.async { [weak self] in
                 self?.offset = 0
-                self?.categoryName = self?.categoriesModel?.results[0].listNameEncoded ?? ""
+                self?.categoryName = self?.categoriesModel?.results.first?.listNameEncoded ?? ""
                 self?.delegate?.categoriesDidFetch()
                 self?.fetchBooks()
             }

@@ -40,6 +40,12 @@
 		D516C1132A5AA761006CD3D6 /* JJBookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1122A5AA761006CD3D6 /* JJBookDetailView.swift */; };
 		D516C1152A5AB364006CD3D6 /* JJBookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1142A5AB364006CD3D6 /* JJBookDetailViewModel.swift */; };
 		D516C1172A5AB605006CD3D6 /* JJBookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1162A5AB605006CD3D6 /* JJBookDetailModel.swift */; };
+		D516C11D2A5AEBF9006CD3D6 /* JJBookListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C11C2A5AEBF9006CD3D6 /* JJBookListVCTests.swift */; };
+		D516C11F2A5AEC6F006CD3D6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D516C11E2A5AEC6F006CD3D6 /* SDWebImage */; };
+		D516C1212A5AF397006CD3D6 /* JJBooksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1202A5AF397006CD3D6 /* JJBooksViewModelTests.swift */; };
+		D516C1232A5AF437006CD3D6 /* MockJJDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1222A5AF437006CD3D6 /* MockJJDispatchQueue.swift */; };
+		D516C1252A5AF4D7006CD3D6 /* MockJJRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1242A5AF4D7006CD3D6 /* MockJJRepository.swift */; };
+		D516C1272A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516C1262A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift */; };
 		F40B740A3CC748A249C3E56D /* Pods_JJTimes_JJTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC995F8CF1ADADB73043847 /* Pods_JJTimes_JJTimesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +109,11 @@
 		D516C1122A5AA761006CD3D6 /* JJBookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBookDetailView.swift; sourceTree = "<group>"; };
 		D516C1142A5AB364006CD3D6 /* JJBookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBookDetailViewModel.swift; sourceTree = "<group>"; };
 		D516C1162A5AB605006CD3D6 /* JJBookDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBookDetailModel.swift; sourceTree = "<group>"; };
+		D516C11C2A5AEBF9006CD3D6 /* JJBookListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBookListVCTests.swift; sourceTree = "<group>"; };
+		D516C1202A5AF397006CD3D6 /* JJBooksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJBooksViewModelTests.swift; sourceTree = "<group>"; };
+		D516C1222A5AF437006CD3D6 /* MockJJDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJJDispatchQueue.swift; sourceTree = "<group>"; };
+		D516C1242A5AF4D7006CD3D6 /* MockJJRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJJRepository.swift; sourceTree = "<group>"; };
+		D516C1262A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJJBooksViewModelDelegate.swift; sourceTree = "<group>"; };
 		ED245B6B61BC64CABCC74479 /* Pods-JJTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTimesTests.debug.xcconfig"; path = "Target Support Files/Pods-JJTimesTests/Pods-JJTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D516C11F2A5AEC6F006CD3D6 /* SDWebImage in Frameworks */,
 				9C798EEFE99DB93486D429B9 /* Pods_JJTimesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				D516C0BC2A4EDCD2006CD3D6 /* JJTimesTests.swift */,
+				D516C11C2A5AEBF9006CD3D6 /* JJBookListVCTests.swift */,
+				D516C1202A5AF397006CD3D6 /* JJBooksViewModelTests.swift */,
+				D516C1282A5AF6A5006CD3D6 /* Utils */,
 			);
 			path = JJTimesTests;
 			sourceTree = "<group>";
@@ -376,6 +391,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D516C1282A5AF6A5006CD3D6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D516C1222A5AF437006CD3D6 /* MockJJDispatchQueue.swift */,
+				D516C1242A5AF4D7006CD3D6 /* MockJJRepository.swift */,
+				D516C1262A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,6 +441,9 @@
 				D516C0BA2A4EDCD2006CD3D6 /* PBXTargetDependency */,
 			);
 			name = JJTimesTests;
+			packageProductDependencies = (
+				D516C11E2A5AEC6F006CD3D6 /* SDWebImage */,
+			);
 			productName = JJTimesTests;
 			productReference = D516C0B82A4EDCD2006CD3D6 /* JJTimesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -653,6 +681,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D516C0BD2A4EDCD2006CD3D6 /* JJTimesTests.swift in Sources */,
+				D516C11D2A5AEBF9006CD3D6 /* JJBookListVCTests.swift in Sources */,
+				D516C1272A5AF67D006CD3D6 /* MockJJBooksViewModelDelegate.swift in Sources */,
+				D516C1252A5AF4D7006CD3D6 /* MockJJRepository.swift in Sources */,
+				D516C1212A5AF397006CD3D6 /* JJBooksViewModelTests.swift in Sources */,
+				D516C1232A5AF437006CD3D6 /* MockJJDispatchQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1002,6 +1035,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		D516C0FC2A55BEB9006CD3D6 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D516C0FB2A55BEB9006CD3D6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		D516C11E2A5AEC6F006CD3D6 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D516C0FB2A55BEB9006CD3D6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;

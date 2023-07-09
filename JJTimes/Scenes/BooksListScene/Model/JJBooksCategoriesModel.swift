@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - JJBooksCategoriesResult
-public struct JJBooksCategoriesModel: Codable {
+public struct JJBooksCategoriesModel: Codable, Equatable {
     let status, copyright: String
     let numResults: Int
     let results: [JJBooksCategoriesResult]
@@ -21,7 +21,7 @@ public struct JJBooksCategoriesModel: Codable {
 }
 
 // MARK: - Result
-struct JJBooksCategoriesResult: Codable {
+struct JJBooksCategoriesResult: Codable, Equatable {
     let listName, displayName, listNameEncoded, oldestPublishedDate: String
     let newestPublishedDate, updated: String
 

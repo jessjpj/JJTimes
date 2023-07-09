@@ -6,7 +6,10 @@
 //
 
 import Foundation
-class JJBooksModel: Codable {
+class JJBooksModel: Codable, Equatable {
+    static func == (lhs: JJBooksModel, rhs: JJBooksModel) -> Bool {
+        return lhs.books == rhs.books
+    }
 
     var books: JJBooksResultsModel?
 
@@ -18,7 +21,7 @@ class JJBooksModel: Codable {
 }
 
 // MARK: - JJBooksResults
-public struct JJBooksResultsModel: Codable {
+public struct JJBooksResultsModel: Codable, Equatable {
     let numResults: Int
     let lastModified: String
     var results: [JJBooksResult]
@@ -31,7 +34,11 @@ public struct JJBooksResultsModel: Codable {
 }
 
 // MARK: - Result
-struct JJBooksResult: Codable {
+struct JJBooksResult: Codable, Equatable {
+    static func == (lhs: JJBooksResult, rhs: JJBooksResult) -> Bool {
+        return lhs.bookDetails == rhs.bookDetails
+    }
+    
     let listName, displayName: String
     let bestsellersDate, publishedDate: String
     let rank, rankLastWeek, weeksOnList, asterisk: Int
@@ -58,7 +65,7 @@ struct JJBooksResult: Codable {
 }
 
 // MARK: - BookDetail
-struct BookDetail: Codable {
+struct BookDetail: Codable, Equatable {
     let title, description, contributor, author: String
     let contributorNote, price, ageGroup, publisher: String
     let primaryIsbn13, primaryIsbn10: String
